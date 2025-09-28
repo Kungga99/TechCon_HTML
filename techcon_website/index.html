@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechCon 2024</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <h1>TechCon 2024</h1>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="intro-heading" class="hero">
+      <h2 id="intro-heading">Welcome to TechCon 2024</h2>
+      <p>
+        TechCon 2024 brings together developers, designers, and product leaders
+        for three days of talks, workshops, and networking. Learn about the latest
+        tools, practices, and trends shaping the future of technology.
+      </p>
+
+      <figure>
+        <video
+          controls
+          width="960"
+          height="540"
+          poster="assets/promo-poster.jpg"
+          aria-describedby="video-desc"
+        >
+          <source src="assets/promo.mp4" type="video/mp4" />
+          <!-- Captions track (must be UTF-8 .vtt) -->
+          <track
+            kind="captions"
+            srclang="en"
+            label="English captions"
+            src="assets/subtitles_en.vtt"
+            default
+          />
+          <!-- Fallback -->
+          Your browser does not support the video element.
+          <a href="assets/promo.mp4">Download the promotional video</a>.
+        </video>
+        <figcaption id="video-desc">
+          Promotional video for TechCon 2024 — captions available. A transcript is provided below.
+        </figcaption>
+      </figure>
+
+      <details>
+        <summary>Transcript (click to expand)</summary>
+        <p>
+          [00:00] Welcome to TechCon 2024. Join us for three days of...
+        </p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <p>copyright © <span id="year"></span> TechCon — All rights reserved.</p>
+  </footer>
+
+  <script>
+    // set current year dynamically so the footer stays up to date
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
