@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About TechCon 2024</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <h1>About TechCon 2024</h1>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- History -->
+    <article>
+      <h2>Our History</h2>
+      <p>
+        TechCon began over a decade ago as a small gathering of technology enthusiasts.
+        Since then, it has grown into one of the premier conferences for developers,
+        designers, and leaders in the tech industry worldwide.
+      </p>
+      <img src="assets/history.jpg" alt="Attendees at the first TechCon conference in 2010" width="600" />
+    </article>
+
+    <!-- Mission -->
+    <article>
+      <h2>Our Mission</h2>
+      <p>
+        The mission of TechCon is to inspire innovation and collaboration,
+        fostering an environment where new ideas and transformative technologies
+        can flourish.
+      </p>
+      <img src="assets/mission.jpg" alt="TechCon mission illustration showing innovation and teamwork" width="600" />
+    </article>
+
+    <!-- Past Speakers -->
+    <article>
+      <h2>Notable Past Speakers</h2>
+      <p>Over the years, TechCon has hosted numerous influential voices in technology:</p>
+
+      <section>
+        <h3>Alex Johnson</h3>
+        <img src="assets/speaker-alex.jpg" alt="Photo of Alex Johnson, AI pioneer" width="200" />
+        <p>
+          Alex Johnson, a pioneer in artificial intelligence, shared insights on
+          ethical AI and the future of machine learning at TechCon 2022.
+        </p>
+      </section>
+
+      <section>
+        <h3>Sara Kim</h3>
+        <img src="assets/speaker-sara.jpg" alt="Photo of Sara Kim, cybersecurity expert" width="200" />
+        <p>
+          Sara Kim, cybersecurity expert and author, discussed global security
+          challenges and data privacy innovations at TechCon 2021.
+        </p>
+      </section>
+
+      <section>
+        <h3>Dr. Miguel Alvarez</h3>
+        <img src="assets/speaker-miguel.jpg" alt="Photo of Dr. Miguel Alvarez, quantum computing researcher" width="200" />
+        <p>
+          Dr. Miguel Alvarez, leading researcher in quantum computing,
+          presented groundbreaking work on scalable quantum architectures.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>copyright © <span id="year"></span> TechCon — All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year dynamically so the footer stays up to date
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
